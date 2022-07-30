@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.App {
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.App header {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+div.App header nav.navbar {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: end;
+    gap: 2px;
+    padding: 10px 20px 10px 10px;
+}
+
+div.App header nav.navbar li {
+    width: 10%;
+    list-style-type: none;
+}
+
+div.App header nav.navbar li a {
+    color: #F9F9F9;
+    font-size: 15px;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+div.App header nav.navbar li a:hover {
+    color: #1E1C43;
+}
+
+div.App main.main div.content1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0px 10px 0px 10px;
+    font-family: 'Fira Sans', sans-serif;   
+}
+
+div.App main.main div.content1 section.sesi1 {
+    width:40%;
+    display: flex;
+    justify-content: center;
+}
+
+div.App main.main div.content1 section.sesi1 h1 {
+    font-weight: bold;
+    font-size: 25px;
+    color: #1E1C43;
+}
+
+div.App main.main div.content1 section.sesi2 {
+    width:40%;
+    display: flex;
+    justify-content: center;
+}
+
+div.App main.main div.content1 section.sesi2 img {
+    width: 50%;
+}
+
+div.App main.main div.content1 section.sesi3 {
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #1E1C43;
+}
+
+div.App main.main div.content1 section.sesi3 p {
+    font-weight: bold;
+}
+
+div.App main.main div.content1 section.sesi3 button {
+    align-items: center;
+    border: 1px solid rgba(30, 28, 67, 1);
+    background-color: transparent;
+    border-radius: .70rem;
+    box-shadow: rgba(30, 28, 67, 1) 0 1px 3px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+    color:#1E1C43;
+}
+
+div.App main.main div.content1 section.sesi3 button:hover, div.App main.main div.content1 section.sesi3 button:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+div.App main.main div.content1 section.sesi3 button:hover {
+    transform: translateY(-1px);
+}
+
+div.App main.main div.content1 section.sesi3 button:active {
+    background-color: #1E1C43;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#F9F9F9;
+}
+
+@media screen and (max-width: 765px) {
+    div.App header nav.navbar {
+        padding: 3px 3px 3px 6px;
+        justify-content: center;
+    }
+    div.App header nav.navbar li {
+        width: 20%;
+    }
+    div.App main.main div.content1 section.sesi1 {
+        width: 100%;
+    }
+    div.App main.main div.content1 section.sesi2 {
+        width: 100%;
+    }
+    div.App main.main div.content1 section.sesi3 {
+        width: 100%;
+    }
+}
